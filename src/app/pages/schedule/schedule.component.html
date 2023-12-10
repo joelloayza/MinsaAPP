@@ -1,0 +1,23 @@
+<form class="container mt-4" [formGroup]="scheduleForm" (ngSubmit)="onSubmit()">
+    <div>
+      <!-- <label for="paciente">Paciente:</label> -->
+      <input type="text" id="paciente" placeholder="Ingrese Paciente" formControlName="paciente" required>
+    </div>
+    <div>
+      <!-- <label for="dni">DNI:</label> -->
+      <input type="text" id="dni" placeholder="Ingrese DNI" formControlName="dni" required>
+    </div>
+    <div>
+	    <div>
+      <!-- <label for="fecha">Fecha:</label> -->
+      <input type="text" id="fecha" placeholder="Ingrese Fecha" formControlName="fecha" required>
+    </div>
+    <div>
+      <!-- <label for="email">Email:</label> -->
+      <input type="email" id="email" placeholder="Ingrese E-mail" formControlName="email" required>
+    </div>
+    <div>
+      <!-- <label for="comentarios">Comentarios:</label> -->
+      <textarea id="comentarios" placeholder="Ingrese Comentarios" formControlName="comentarios"></textarea>
+    </div>
+    <button type="submit">Enviar</button>
